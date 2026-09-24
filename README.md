@@ -1,32 +1,29 @@
 # ryandotcom: Personal Portfolio
 
-My personal portfolio site: a single-page React + TypeScript app with smooth-scroll navigation, project cards linked to this GitHub, a skills section, and a working contact form.
+My personal portfolio: featured projects with a case-study page for each, experience, and a contact form.
 
-![React](https://img.shields.io/badge/React%2019-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind%204-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-**Live:** ryandotcom.vercel.app
+**Live:** [ryandotcom.vercel.app](https://ryandotcom.vercel.app)
 
 ## Features
 
-- Sections: intro, about, academic journey, projects, skills, contact
-- Scroll-to-section navigation that highlights the section you're viewing
+- Every project lives in one data file, [`src/data/projects.ts`](src/data/projects.ts). Adding an entry creates its card and its `/projects/<slug>` case-study page (problem, approach, architecture, results, next steps).
+- Profile, experience, education, and skills live in [`src/data/site.ts`](src/data/site.ts)
+- Statically generated pages, dark/light toggle with no flash on load
 - Contact form that sends email through EmailJS, with no backend to host
-- Lucide icons, responsive Tailwind layout
+- Downloadable résumé at `/Ryan_Dsouza_Resume.pdf`
 
 ## Run locally
 
-Create `.env` with your EmailJS credentials:
-
-```
-REACT_APP_SERVICE_ID=...
-REACT_APP_TEMPLATE_ID=...
-REACT_APP_USER_ID=...
-```
+Copy `.env.example` to `.env.local` and fill in your EmailJS credentials, then:
 
 ```bash
 npm install
-npm start        # http://localhost:3000
-npm run build    # production build for Vercel / Netlify / GitHub Pages
+npm run dev      # http://localhost:3000
+npm run build    # production build
 ```
+
+Deployed on Vercel; every push to `main` redeploys.

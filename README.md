@@ -6,7 +6,7 @@ My personal portfolio site: a single-page React + TypeScript app with smooth-scr
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-**Live:** https://YOUR-PORTFOLIO-URL
+**Live:** ryandotcom.vercel.app
 
 ## Features
 
